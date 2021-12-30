@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyFootball2021", "FantasyFootball2021.csproj", "{C702D3A7-972B-4323-8977-8FF33F16D357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FantasyFootball2021", "FantasyFootball2021.csproj", "{C702D3A7-972B-4323-8977-8FF33F16D357}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A02BC073-E198-41AD-B77E-B75D8643A972} = {A02BC073-E198-41AD-B77E-B75D8643A972}
+		{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99} = {DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FantasyFootballLibrary", "..\FantasyFootballLibrary\FantasyFootballLibrary.csproj", "{A02BC073-E198-41AD-B77E-B75D8643A972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FantasyFootballLibrary", "..\FantasyFootballLibrary\FantasyFootballLibrary.csproj", "{A02BC073-E198-41AD-B77E-B75D8643A972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,10 @@ Global
 		{A02BC073-E198-41AD-B77E-B75D8643A972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A02BC073-E198-41AD-B77E-B75D8643A972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A02BC073-E198-41AD-B77E-B75D8643A972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE2B6DC-8927-4EAB-8960-D52FDFF54C99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

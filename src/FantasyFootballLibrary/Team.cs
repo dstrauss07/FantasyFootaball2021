@@ -8,15 +8,11 @@ namespace FantasyFootballLibrary
     {
         [Key]
         public int TeamId { get; set;}
-        public int TeamName { get; set;}
-        [ForeignKey("Owner")]
-        public int OwnerId { get; set;}
-        public Owner Owner { get; set;}
-        [ForeignKey("Contract")]
-        public int ContractId { get; set;}
-        public Contracts Contracts { get; set;}
-        [ForeignKey("Player")]
-        public int PlayerId { get; set; }
-        public Contracts Player { get; set; }
+        public string TeamName { get; set;}
+        public int FourYearContracts { get; set; }
+        public int ThreeYearContracts { get; set; }
+        public int TwoYearContracts { get; set; }
+        public int OneYearContracts { get; set; }
+        //foreign key to aspnetuser table?
     }
 }
